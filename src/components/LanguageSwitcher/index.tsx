@@ -24,6 +24,8 @@ const LanguageSwitcher: React.FC = () => {
         return <ReactCountryFlag style={iconStyle} countryCode="FR" svg />;
       case 'pt':
         return <ReactCountryFlag style={iconStyle} countryCode="BR" svg />;
+      case 'zh':
+        return <ReactCountryFlag style={iconStyle} countryCode="CN" svg />;
       default:
         return <ReactCountryFlag style={iconStyle} countryCode="GB" svg />;
     }
@@ -40,6 +42,7 @@ const LanguageSwitcher: React.FC = () => {
         <MenuItem onClick={changeLanguage('en')}>English</MenuItem>
         <MenuItem onClick={changeLanguage('fr')}>Français</MenuItem>
         <MenuItem onClick={changeLanguage('pt')}>Portugues</MenuItem>
+        <MenuItem onClick={changeLanguage('zh')}>简体中文</MenuItem>
       </MenuList>
     </Menu>
   );
